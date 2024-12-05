@@ -58,6 +58,7 @@
     "yargs": "^17.5.1"
   },
   "devDependencies": {
+    "@gravityci/cli": "^0.0.4",
     "ava": "6.2.0",
     "c8": "10.1.2",
     "clear-module": "4.1.2",
@@ -154,7 +155,8 @@
     "test": "npm-run-all --print-label --parallel lint:* --serial test:*",
     "test:unit": "c8 ava --verbose",
     "test:integration": "ava --verbose test/integration.test.js",
-    "test:e2e": "ava --verbose test/e2e.test.js"
+    "test:e2e": "ava --verbose test/e2e.test.js",
+    "gravityci": "gravityci"
   },
   "renovate": {
     "extends": [
